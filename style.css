@@ -1,0 +1,233 @@
+* {
+  font-family: "Archivo (woff)", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 1400px;
+  max-width: 100vw;
+}
+:root {
+  --navy-blue: #4c5fd5;
+  --ashen: #dadbf1;
+  --black: #000000;
+  --white: #ffffff;
+}
+.container {
+  display: grid;
+}
+nav {
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+}
+header {
+  width: 100%;
+  height: 250px;
+  padding: 40px;
+  text-align: center;
+}
+nav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  /* border: 2px solid black; */
+  background-color: var(--black);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-anchor {
+  text-decoration: none;
+  color: var(--white);
+}
+/* the line between two words in the nav bar in left */
+.line {
+  color: #ffffff;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+button[type="submit"] {
+  border-radius: 5px;
+  padding: 8px 20px;
+  cursor: pointer;
+  text-align: center;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 13px;
+}
+.submit {
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: rgb(113, 113, 113);
+  background-color: #0d0d0d;
+  color: var(--white);
+  border-radius: 5px;
+  margin-right: 8px;
+
+  cursor: pointer;
+}
+.sign {
+  border: none;
+  background-color: var(--navy-blue);
+  color: var(--white);
+}
+header {
+  background-color: var(--ashen);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+input[type="search"] {
+  padding: 12px 20px;
+  width: 400px;
+  box-shadow: #0d0d0d 0px 4px 15px -5px;
+  border-radius: 5px;
+  border: 1.5px solid rgb(113, 113, 113);
+  background-image: url("/assets/icons8-search-94.png");
+  background-position: 98% center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  text-decoration: rgb(95, 0, 0);
+  text &:hover {
+    box-shadow: #0d0d0d 0px 4px 20px 3px;
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+    transition: ease-in-out 0.3s;
+    scale: 1.02;
+  }
+  &:out-of-range {
+    outline: none;
+  }
+  transition: ease-in-out 0.5s;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding-top: 100px;
+  height: max-content;
+}
+.container-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 20px;
+}
+.content-block {
+  margin-top: 50px;
+  margin-right: 0;
+  margin-left: -10px;
+}
+.infos {
+  text-align: left;
+  margin-block: 10px;
+  padding: 10px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  &:hover {
+    background-color: var(--ashen);
+    border-radius: 10px;
+    box-shadow: #0d0d0d 0px 4px 15px -5px;
+    transition: ease-in-out 0.3s;
+  }
+  &:not(:hover) {
+    transition: ease-in-out 0.3s;
+  }
+}
+.info-title {
+  font-size: 20px;
+  font-weight: 580;
+
+  margin-bottom: 15px;
+}
+.infos a {
+  text-decoration: none;
+  font-size: small;
+  color: var(--black);
+  &:hover {
+    /* margin-left: 10px; */
+    display: inline-block;
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+  }
+  &:not(:hover) {
+    display: inline-block;
+    transform: scale(1);
+    transition: ease-in-out 0.3s;
+  }
+}
+.info-details {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  /* background-color: #801919; */
+  margin-block: 10px;
+  width: 100%;
+  margin-block: 10px;
+}
+img {
+  /* gap: 40px; */
+  width: 130px;
+  height: 130px;
+  justify-self: center;
+  align-self: flex-start;
+  margin: 20px 10px 10px 10px;
+}
+footer {
+  background-color: var(--black);
+  height: 350px;
+  width: 100%;
+  /* width: ; */
+  color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  text-align: center;
+  /* font-size: 70px; */
+  padding: 50px;
+  padding-left: 80px;
+}
+footer p {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 15px;
+  font-weight: 300;
+}
+footer h2 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.contact {
+  font-size: x-large;
+  margin-top: 20px;
+}
+.final-logo {
+  text-align: left;
+  justify-content: flex-end;
+  align-self: flex-end;
+  max-width: 150px;
+  max-height: 180px;
+  line-height: 1.3;
+}
+.img-footer {
+  align-self: start;
+  justify-self: start;
+  width: 80px;
+  height: auto;
+  margin-left: -12px;
+}

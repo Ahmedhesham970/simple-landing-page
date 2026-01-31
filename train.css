@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#mySelect {
+  color: rgb(7, 191, 81);
+  background-color: aqua;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #030000;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
